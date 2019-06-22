@@ -4,4 +4,8 @@ def reformat_languages(languages)
     languages.each do |name, atr|
       newHash[name] ||= atr
       newHash[name][:style]= []
+      newHash[name][:style] << style
+    end
+  end
+  return newHash
 end
