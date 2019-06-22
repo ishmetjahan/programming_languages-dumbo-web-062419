@@ -34,13 +34,13 @@ languages = {
 #
 def reformat_languages(languages)
   newHas= {}
-  languages.each do |style, lang|
+  languages.each do |type, lang|
     lang.each do |name, atr|
       atr.each do |data,val|
         if newHas.key?(name)== false 
           newHas[name]= {data => val, :style => [type]}
         else
-          newHas[name][:style] << style
+          newHas[name][:style] << type
         end
       end
       end
