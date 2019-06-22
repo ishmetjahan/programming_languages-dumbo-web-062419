@@ -38,7 +38,7 @@ def reformat_languages(languages)
     lang.each do |name, atr|
       atr.each do |data,val|
         if newHas.key?(name)== false 
-          newHas[name]= {data => value, :style => [type]}
+          newHas[name]= {data => val, :style => [type]}
         else
           newHas[name][:style] << type
         end
