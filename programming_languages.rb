@@ -40,7 +40,7 @@ def reformat_languages(languages)
         if newHas.key?(name)== false 
           newHas[name]= {data => val, :style => [type]}
         else
-          newHas[name][:style] << :type
+          newHas[name][:style] << style
         end
       end
       end
