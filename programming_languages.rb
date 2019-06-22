@@ -1,11 +1,11 @@
 def reformat_languages(languages)
-  newHash= {}
+  newHas= {}
   languages.each do |style, lang|
     languages.each do |name, atr|
-      newHash[name] ||= atr
-      newHash[name][:style]= []
-      newHash[name][:style] << style
+      newHas[name] ||= atr
+      newHas[name][:style]= []
+      newHas[name][:style] << style
     end
   end
-  return newHash
+  newHas
 end
